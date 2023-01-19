@@ -1,0 +1,61 @@
+{
+  "name": "aurelia-tauri",
+  "description": "An Aurelia 2 client application.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "???"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@aurelia/router": "^2.0.0-beta.1",
+    "@tauri-apps/api": "^1.2.0",
+    "aurelia": "latest"
+  },
+  "devDependencies": {
+    "@aurelia/plugin-gulp": "latest",
+    "@aurelia/testing": "latest",
+    "@tauri-apps/cli": "^1.2.2",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "autoprefixer": "^10.4.13",
+    "connect": "^3.7.0",
+    "connect-history-api-fallback": "^2.0.0",
+    "connect-injector": "^0.4.4",
+    "cross-env": "^7.0.3",
+    "del": "^6.1.1",
+    "eslint": "^8.30.0",
+    "gulp": "^4.0.2",
+    "gulp-dumber": "^2.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-terser": "^2.1.0",
+    "gulp-typescript": "^5.0.1",
+    "htmlhint": "^1.1.4",
+    "merge2": "^1.4.1",
+    "open": "^8.4.0",
+    "postcss": "^8.4.20",
+    "postcss-url": "^10.1.3",
+    "serve-static": "^1.15.0",
+    "socket.io": "^4.5.4",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "lint:js": "eslint src test --ext .js,.ts",
+    "lint:html": "htmlhint -c .htmlhintrc src",
+    "lint": "npm run lint:js && npm run lint:html",
+    "start": "gulp",
+    "tauri": "tauri",
+    "build": "gulp clean && cross-env NODE_ENV=production gulp build",
+    "clear-cache": "gulp clear-cache"
+  },
+  "overrides": {
+    "chokidar": "^3.5.3",
+    "glob-stream": "^7.0.0",
+    "glob-parent": "^6.0.2",
+    "micromatch": "^4.0.5"
+  }
+}

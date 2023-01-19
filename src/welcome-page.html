@@ -1,0 +1,22 @@
+<h1>${message}</h1>
+
+<hr />
+
+<h1>Play SineWave by calling Rust Code! (./src-tauri/src/main.rs)</h1>
+
+<div>
+    <label>Duration</label>
+    <input value.bind="duration" placeholder="duration" type="number" />
+    <button click.trigger="playSineWave()">Play SineWave</button>
+</div>
+
+<hr />
+
+<h1>Tauri State</h1>
+
+<div>
+    <Button click.trigger="updateCounter(-1)"> - </Button>
+    <input disabled value.bind="counter" />
+    <Button click.trigger="updateCounter(1)"> + </Button>
+</div>
+
