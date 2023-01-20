@@ -4,7 +4,7 @@
     "beforeBuildCommand": "npm run build",
     "beforeDevCommand": "npm start",
     "devPath": "http://localhost:9000",
-    "distDir": "./dist"
+    "distDir": "../dist"
   },
   "package": {
     "productName": "aurelia-tauri",
