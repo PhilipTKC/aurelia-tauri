@@ -8,7 +8,7 @@ Aurelia
         RouterConfiguration.customize({
             useUrlFragmentHash: false,
             title: {
-                appTitle: "${componentTitles}${appTitleSeparator}FastMark"
+                appTitle: "${componentTitles}${appTitleSeparator}Aurelia Tauri"
             }
         })
     )
